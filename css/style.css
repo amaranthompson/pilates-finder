@@ -1,0 +1,86 @@
+/* Pilates Finder homepage — ART 116 */
+:root {
+  --olive: #45470d;
+  --cream: #f8f8ef;
+  --ink: #5a4a3f;
+  --muted: #766d60;
+  --line: #d8d4c6;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.65; }
+h1, h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; line-height: 1.12; }
+h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); margin: 0 0 1rem; }
+p { margin: 0 0 1.1rem; }
+a { color: inherit; }
+a:link { color: inherit; }
+a:visited { color: #81765f; }
+a:hover { color: #a79b6a; }
+a:active { color: #b94a37; }
+.hero { min-height: 570px; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: linear-gradient(rgba(45,42,27,.25), rgba(45,42,27,.42)), url('https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1800&q=90') center 43%/cover no-repeat; }
+.hero-content { width: min(1100px, 92%); padding: 4rem 0 2rem; }
+.monogram { font-family: Georgia, serif; font-size: clamp(4rem, 10vw, 8rem); font-style: italic; line-height: .6; opacity: .65; margin: 0; }
+.hero h1 { font-size: clamp(3.5rem, 8vw, 6.8rem); margin: .4rem 0 1.3rem; text-shadow: 0 2px 10px #4b4534; }
+.tagline { margin-bottom: 2.6rem; }
+nav { display: flex; justify-content: center; gap: 1.3rem; flex-wrap: wrap; }
+nav a, .pill-button { display: inline-block; background: var(--olive); color: var(--cream) !important; text-decoration: none; border-radius: 30px; padding: .7rem 2rem; min-width: 150px; text-align: center; font-size: .9rem; transition: background-color .2s ease, transform .2s ease; }
+nav a:link, nav a:visited { color: var(--cream); }
+nav a:hover, nav a:focus, .pill-button:hover, .pill-button:focus { background: #77783a; color: white; transform: translateY(-2px); }
+nav a:active, .pill-button:active { background: #292a06; transform: translateY(0); }
+.intro-favorites { display: grid; grid-template-columns: 1fr 1fr; }
+.panel { padding: clamp(2rem, 5.5vw, 5rem); }
+.intro { padding-top: 4rem; padding-bottom: 4rem; }
+.intro h2 { font-size: clamp(1.5rem, 2.8vw, 2.2rem); }
+em { font-style: italic; }
+.wide-photo { width: 100%; height: 270px; object-fit: cover; display: block; margin: 2rem 0; }
+.dark { background: var(--olive); color: var(--cream); }
+.favorites { padding-top: 4rem; }
+.studio-row { display: grid; grid-template-columns: minmax(100px, 45%) 1fr; align-items: center; gap: 1.5rem; margin: 1.2rem 0; }
+.studio-row img { width: 100%; height: 120px; object-fit: cover; }
+.studio-row a { text-decoration: underline; }
+.studio-row a:hover { color: #d9d3a4; }
+.community-signup { display: grid; grid-template-columns: 1fr 1fr; min-height: 480px; }
+.community-photo { width: 100%; height: 100%; min-height: 480px; object-fit: cover; }
+.signup { display: flex; align-items: center; justify-content: center; padding: 3rem; }
+.signup-card { background: linear-gradient(rgba(69,71,13,.72), rgba(69,71,13,.86)), url('https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80') center/cover; color: white; padding: 2rem; width: 100%; text-align: center; }
+.signup-card h2 { font-size: 2rem; }
+form { text-align: left; }
+label { display: block; font-family: Georgia, serif; font-style: italic; font-size: .9rem; margin: .7rem 0 .25rem; }
+input, textarea { display: block; width: 100%; border: 1px solid #aaa58a; border-radius: 4px; padding: .7rem; font: inherit; background: rgba(255,255,255,.08); color: inherit; }
+input:focus, textarea:focus { outline: 2px solid #aaa66c; outline-offset: 2px; }
+button { display: block; width: 100%; margin-top: 1rem; border: 0; border-radius: 24px; padding: .7rem 1rem; background: var(--cream); color: var(--olive); font-family: Georgia, serif; cursor: pointer; }
+button:hover, button:focus { background: #dcd9c4; }
+button:active { background: #b9b58e; }
+small { display: block; margin-top: .7rem; font-size: .7rem; opacity: .8; }
+.about-banner { padding: 4rem 5.5%; }
+.about-content { min-height: 360px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 3rem 12%; background: linear-gradient(rgba(35,31,18,.45), rgba(35,31,18,.62)), url('https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1600&q=85') center/cover; }
+.about-content h2 { font-size: clamp(2.7rem, 6vw, 4.5rem); }
+.highlight { display: grid; grid-template-columns: 34% 1fr; gap: 3rem; padding: 0; align-items: stretch; }
+.highlight > img { width: 100%; height: 100%; min-height: 600px; object-fit: cover; }
+.highlight-copy { padding: 4rem 5rem 4rem 0; }
+.highlight-copy h2 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
+.highlight-copy h3 { font-size: 1rem; font-weight: 400; margin-top: 2rem; }
+.date { font-family: Georgia, serif; font-style: italic; font-size: .9rem; color: var(--muted); }
+.highlight-copy .pill-button { margin-top: 1.5rem; }
+.contact { text-align: center; position: relative; padding-top: 4rem; padding-bottom: 5rem; }
+.contact h2 { font-size: clamp(2.8rem, 5vw, 4.3rem); }
+.contact-form { background: var(--olive); color: var(--cream); max-width: 780px; margin: 2rem auto 0; padding: 1.5rem; text-align: left; }
+.contact-form button { margin-top: 1.2rem; }
+.footer-mark { position: absolute; left: 4%; bottom: 1rem; font-family: Georgia, serif; font-size: 3rem; font-style: italic; }
+footer { text-align: center; background: var(--olive); color: var(--cream); padding: 1.2rem; font-size: .85rem; }
+footer p { margin: 0; }
+@media (max-width: 760px) {
+  .hero { min-height: 500px; }
+  nav { gap: .6rem; }
+  nav a { min-width: 125px; padding: .65rem 1rem; }
+  .intro-favorites, .community-signup, .highlight { grid-template-columns: 1fr; }
+  .panel { padding: 2rem 1.4rem; }
+  .wide-photo { height: 230px; }
+  .community-photo { min-height: 300px; max-height: 380px; }
+  .signup { padding: 1.5rem; }
+  .about-banner { padding: 1.5rem; }
+  .about-content { padding: 2rem 1.3rem; }
+  .highlight > img { min-height: 320px; max-height: 420px; }
+  .highlight-copy { padding: 2rem 1.4rem 3rem; }
+  .footer-mark { position: static; margin-top: 1rem; }
+}

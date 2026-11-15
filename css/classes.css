@@ -1,0 +1,34 @@
+/* Pilates Finder — Classes page */
+.classes-page { background: #f8f8ef; color: #5a4a3f; }
+.classes-header { text-align: center; padding: 2.4rem 1.5rem 2rem; background: #f8f8ef; }
+.classes-header .brand { display: inline-block; color: #45470d; font: 400 clamp(2.8rem, 7vw, 5.2rem)/1.1 Georgia, 'Times New Roman', serif; text-decoration: none; }
+.classes-header .tagline { margin: .5rem 0 1.5rem; font: italic 1.1rem Georgia, 'Times New Roman', serif; }
+.classes-header nav { display: flex; justify-content: center; flex-wrap: wrap; gap: .8rem; }
+.classes-header nav a { display: inline-block; min-width: 130px; padding: .65rem 1.4rem; border-radius: 30px; background: #45470d; color: #f8f8ef; text-decoration: none; font-size: .9rem; transition: background .2s ease, transform .2s ease; }
+.classes-header nav a:visited { color: #f8f8ef; }
+.classes-header nav a:hover, .classes-header nav a:focus { background: #77783a; color: white; transform: translateY(-2px); }
+.classes-header nav a:active { background: #292a06; }
+.classes-header nav a[aria-current="page"] { outline: 2px solid #b9b58e; outline-offset: 3px; }
+.classes-intro { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 3rem; padding: 3.5rem 5.5%; }
+.intro-copy { max-width: 620px; }
+.eyebrow { color: #77783a; letter-spacing: .18em; font-size: .8rem; font-weight: 700; margin-bottom: 1rem; }
+.classes-intro h1 { color: #45470d; font-size: clamp(3rem, 6vw, 5rem); margin: 0 0 1.2rem; }
+.classes-intro h1 em { font-style: italic; }
+.classes-intro p:not(.eyebrow) { max-width: 570px; font-size: 1.08rem; }
+.classes-intro > img { width: 100%; height: 340px; object-fit: cover; border-radius: 48% 48% 8px 8px; }
+.class-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; padding: 1rem 5.5% 3.5rem; }
+.class-card { overflow: hidden; border: 1px solid #ded9c8; border-radius: 16px; background: #fbfaf3; }
+.class-card > img { display: block; width: 100%; height: 230px; object-fit: cover; }
+.card-copy { display: flex; flex-direction: column; align-items: flex-start; min-height: 260px; padding: 1.4rem; }
+.card-copy h2 { color: #45470d; font-size: clamp(1.35rem, 2vw, 1.8rem); margin: 0 0 .7rem; }
+.card-copy p { flex: 1; }
+.level { display: block; width: 100%; margin-top: 1rem; padding: .55rem .7rem; border-radius: 30px; background: #e5dfbd; color: #5a4a3f; text-align: center; font-size: .75rem; font-weight: 700; letter-spacing: .12em; }
+.classes-cta { margin: 0 1.5% 3rem; padding: 3rem 1.5rem; border-radius: 18px; background: #45470d; color: #f8f8ef; text-align: center; }
+.classes-cta h2 { margin: 0 0 .7rem; font-size: clamp(2rem, 4vw, 3rem); }
+.classes-cta p { margin-bottom: 1.5rem; }
+.cta-button { display: inline-block; padding: .75rem 2.5rem; border-radius: 30px; background: #f8f8ef; color: #45470d !important; font: 700 1rem Georgia, 'Times New Roman', serif; text-decoration: none; }
+.cta-button:hover, .cta-button:focus { background: #e5dfbd; }
+.classes-footer { padding: 1.3rem; background: #f8f8ef; color: #5a4a3f; text-align: center; }
+.classes-footer p { margin: 0; }
+@media (max-width: 800px) { .classes-intro { grid-template-columns: 1fr; gap: 1.5rem; padding: 2.5rem 1.4rem; } .classes-intro > img { height: 260px; } .class-options { grid-template-columns: 1fr; padding: 0 1.4rem 2.5rem; } .class-card { display: grid; grid-template-columns: minmax(110px, 38%) 1fr; } .class-card > img { height: 100%; min-height: 230px; } .card-copy { min-height: 230px; padding: 1rem; } .classes-header nav a { min-width: 112px; padding: .6rem .8rem; } }
+@media (max-width: 480px) { .class-card { display: block; } .class-card > img { height: 210px; } .card-copy { min-height: auto; } .classes-cta { margin: 0 1rem 2rem; } }
